@@ -23,7 +23,8 @@
 hs_err_pid*
 
 # Eclipse files from gradle workspace
-build/
+build/*
+build/libs/*-sources.jar
 !build/libs/
 run/
 .settings/
