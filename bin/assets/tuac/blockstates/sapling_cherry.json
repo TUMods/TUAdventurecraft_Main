@@ -1,0 +1,7 @@
+{
+    "variants":
+    {
+        "stage=0,variant=normal": { "model": "tuac:sapling_cherry" },
+        "stage=1,variant=normal": { "model": "tuac:sapling_cherry" }
+    }
+}

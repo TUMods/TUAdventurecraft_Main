@@ -10,4 +10,22 @@ item.pickaxe_flint.name=Flint Pickaxe
 item.knife_flint.name=Flint Knife
 
 
+item.produce_blueberry.name=Blueberry
+item.produce_cherry.name=Cherry
+item.produce_chestnut.name=Chestnut
+item.produce_lemon.name=Lemon
+item.produce_lime.name=Lime
+item.produce_rye.name=Rye
+
+
+tile.crop_blueberry.name=Blueberry Bush
+tile.crop_sapling_cherry.name=Cherry Tree Sapling
+
+
+tile.sapling_cherry.name=Cherry Tree Sapling
+
+
+item.seed_cherry.name=Cherry Pit
+
+
 tile.block_copper.name=Copper Block
