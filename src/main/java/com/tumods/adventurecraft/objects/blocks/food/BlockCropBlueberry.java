@@ -49,9 +49,9 @@ public class BlockCropBlueberry extends BlockCrops implements IGrowable {
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+		playerIn.swingArm(EnumHand.MAIN_HAND);
 		if(!worldIn.isRemote) {
 			if (this.isMaxAge(state)) {
-				playerIn.swingArm(EnumHand.MAIN_HAND);
 				worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), 
 						new ItemStack(ItemInit.PRODUCE_BLUEBERRY, (new Random().nextInt(3)+1)) ));
 				worldIn.setBlockState(pos, this.withAge(3));

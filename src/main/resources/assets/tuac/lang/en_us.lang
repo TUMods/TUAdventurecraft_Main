@@ -29,3 +29,5 @@ item.seed_cherry.name=Cherry Pit
 
 
 tile.block_copper.name=Copper Block
+tile.log_cherry.name=Cherry Wood
+tile.leaves_cherry.name=Cherry Leaves

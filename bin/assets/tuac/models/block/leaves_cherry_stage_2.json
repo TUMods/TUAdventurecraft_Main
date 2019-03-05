@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "tuac:blocks/leaves_cherry_stage_2"
+    }
+}
