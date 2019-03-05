@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y": { "model": "tuac:log_cherry" },
+        "axis=z": { "model": "tuac:log_cherry", "x": 90 },
+        "axis=x": { "model": "tuac:log_cherry", "x": 90, "y": 90 },
+        "axis=none": { "model": "tuac:log_cherry" }
+    }
+}

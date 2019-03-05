@@ -9,7 +9,10 @@ import com.tumods.adventurecraft.util.IHasModel;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -30,7 +33,12 @@ public class BlockSaplingCherry extends BlockBush implements IGrowable, IHasMode
 	public BlockSaplingCherry(String name) {
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.blocktab);
+		setSoundType(SoundType.PLANT);
+		setDefaultState(this.blockState.getBaseState()
+				.withProperty(STAGE, Integer.valueOf(0)));
+		
+//		setCreativeTab(Main.blocktab);
+		setTickRandomly(true);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -82,5 +90,29 @@ public class BlockSaplingCherry extends BlockBush implements IGrowable, IHasMode
 	protected boolean canSustainBush(IBlockState state) {
 		return super.canSustainBush(state);
 	}
+	
+	/**
+     * Convert the given metadata into a BlockState for this Block
+     */
+    public IBlockState getStateFromMeta(int meta)
+    {
+        return this.getDefaultState()
+        		.withProperty(STAGE, Integer.valueOf((meta & 8) >> 3));
+    }
+
+    /**
+     * Convert the BlockState into the correct metadata value
+     */
+    public int getMetaFromState(IBlockState state)
+    {
+        int i = 0;
+        i = i | ((Integer)state.getValue(STAGE)).intValue() << 3;
+        return i;
+    }
+	
+	protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, new IProperty[] {STAGE});
+    }
 
 }
