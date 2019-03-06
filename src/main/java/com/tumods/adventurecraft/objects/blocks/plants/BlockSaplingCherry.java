@@ -6,6 +6,7 @@ import com.tumods.adventurecraft.Main;
 import com.tumods.adventurecraft.init.BlockInit;
 import com.tumods.adventurecraft.init.ItemInit;
 import com.tumods.adventurecraft.util.IHasModel;
+import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeCherry;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
@@ -58,17 +59,39 @@ public class BlockSaplingCherry extends BlockBush implements IGrowable, IHasMode
 	
 	public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand) {
 		if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
+		System.out.println("SaplingCherry generate Tree saplingGrowTree");
 		WorldGenerator gen = new WorldGenTrees(false);//(rand.nextInt(10) == 0 ? new WorldGenBigTree(false) : new WorldGenTrees(false));
-		int i = 0, j = 0;
-		boolean flag = false;
+		int i = 0, j = 0; // used for big trees
+		boolean flag = false; // used for big trees
 		
-//		gen = new WorldGenTreeCherry();
+		gen = new WorldGenTreeCherry();
 		
 		IBlockState iBlockstate = Blocks.AIR.getDefaultState();
-		worldIn.setBlockState(pos, iBlockstate, 4);
+		if (flag) {
+			// is big tree
+			worldIn.setBlockState(pos.add(i, 0, j), iBlockstate, 4);
+			worldIn.setBlockState(pos.add(i + 1, 0, j), iBlockstate, 4);
+			worldIn.setBlockState(pos.add(i, 0, j + 1), iBlockstate, 4);
+			worldIn.setBlockState(pos.add(i + 1, 0, j + 1), iBlockstate, 4);
+		}
+		else
+		{
+			System.out.println("Change sapling to air block");
+			worldIn.setBlockState(pos, iBlockstate, 4);
+		}
+			
 		
-		if (!gen.generate(worldIn, rand, pos.add(i, 0, j)))
-			worldIn.setBlockState(pos, state, 4);
+		if (!gen.generate(worldIn, rand, pos.add(i, 0, j))) {
+			if (flag) {
+				// is big tree
+				worldIn.setBlockState(pos.add(i, 0, j), iBlockstate, 4);
+				worldIn.setBlockState(pos.add(i + 1, 0, j), iBlockstate, 4);
+				worldIn.setBlockState(pos.add(i, 0, j + 1), iBlockstate, 4);
+				worldIn.setBlockState(pos.add(i + 1, 0, j + 1), iBlockstate, 4);
+			}
+			else
+				worldIn.setBlockState(pos, iBlockstate, 4);
+		}
 	}
 	
 	@Override

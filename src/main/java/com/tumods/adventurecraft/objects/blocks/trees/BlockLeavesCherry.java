@@ -148,6 +148,26 @@ public class BlockLeavesCherry extends BlockLeavesFruiting implements IGrowable 
 		super.setFruitByChance(worldIn, pos, MathHelper.getInt(new Random(), 0, 2) >= 1);
 	}
 	
+	@Override
+	public int getMetaFromState(IBlockState state) {
+		int age = state.getValue(AGE);
+		return (((age == 0) ? (state.getValue(CAN_FRUIT) ? 0 : 0b11) : age) << 2) | (state.getValue(CHECK_DECAY) ? 1 : 0) 
+				| (state.getValue(DECAYABLE) ? 0b10 : 0);
+	}
+	
+	@Override
+	public IBlockState getStateFromMeta(int meta) {
+		IBlockState toReturn = this.getDefaultState()
+				.withProperty(CHECK_DECAY, (meta & 1) == 1)
+				.withProperty(DECAYABLE, (meta & 0b10) == 0b10);
+		
+		int firstTwoBits = meta >> 2;
+		boolean canFruit = firstTwoBits != 0b11;
+		int age = (!canFruit || firstTwoBits == 0) ? 0 : firstTwoBits;
+		
+		return toReturn.withProperty(CAN_FRUIT, canFruit).withProperty(AGE, age);
+	}
+	
 	/**
      * Whether this IGrowable can grow
      */
