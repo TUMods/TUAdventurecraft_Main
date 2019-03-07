@@ -3,6 +3,7 @@ package com.tumods.adventurecraft.util.handlers;
 import com.tumods.adventurecraft.init.BlockInit;
 import com.tumods.adventurecraft.init.ItemInit;
 import com.tumods.adventurecraft.util.IHasModel;
+import com.tumods.adventurecraft.world.generation.WorldGenCustomTrees;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -40,6 +41,6 @@ public class RegistryHandler {
 	}
 	
 	public static void otherRegistries() {
-		
+		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 	}
 }

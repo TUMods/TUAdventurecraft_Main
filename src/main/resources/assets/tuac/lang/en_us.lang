@@ -6,11 +6,12 @@ item.ingot_copper.name=Copper Ingot
 
 
 item.hatchet_flint.name=Flint Hatchet
-item.pickaxe_flint.name=Flint Pickaxe
+item.hoshick_flint.name=Flint Hoshick
 item.knife_flint.name=Flint Knife
 
 
 item.produce_blueberry.name=Blueberry
+item.produce_raspberry.name=Raspberry
 item.produce_cherry.name=Cherry
 item.produce_chestnut.name=Chestnut
 item.produce_lemon.name=Lemon

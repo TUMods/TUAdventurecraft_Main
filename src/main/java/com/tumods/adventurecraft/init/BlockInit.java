@@ -5,7 +5,8 @@ import java.util.List;
 
 import com.tumods.adventurecraft.objects.blocks.BlockBase;
 import com.tumods.adventurecraft.objects.blocks.food.BlockCropBlueberry;
-import com.tumods.adventurecraft.objects.blocks.food.BlockCropSaplingCherry;
+import com.tumods.adventurecraft.objects.blocks.food.BlockCropRaspberry;
+import com.tumods.adventurecraft.objects.blocks.plants.BlockCropSaplingCherry;
 import com.tumods.adventurecraft.objects.blocks.plants.BlockSaplingCherry;
 import com.tumods.adventurecraft.objects.blocks.trees.BlockLeavesCherry;
 import com.tumods.adventurecraft.objects.blocks.trees.BlockLogBase;
@@ -22,6 +23,7 @@ public class BlockInit {
 	
 	// CROPS
 	public static final Block CROP_BLUEBERRY = new BlockCropBlueberry("crop_blueberry");
+	public static final Block CROP_RASPBERRY = new BlockCropRaspberry("crop_raspberry");
 	public static final Block CROP_SAPLING_CHERRY = new BlockCropSaplingCherry("crop_sapling_cherry");
 	
 	
