@@ -44,6 +44,20 @@ public class BlockSaplingCherry extends BlockBush implements IGrowable, IHasMode
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
+	
+	@Override
+	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
+		if (!worldIn.isRemote)
+        {
+            super.updateTick(worldIn, pos, state, rand);
+
+            if (!worldIn.isAreaLoaded(pos, 1)) return; // Forge: prevent loading unloaded chunks when checking neighbor's light
+            if (worldIn.getLightFromNeighbors(pos.up()) >= 9 && rand.nextInt(7) == 0)
+            {
+                this.grow(worldIn, rand, pos, state);
+            }
+        }
+	}
 
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {

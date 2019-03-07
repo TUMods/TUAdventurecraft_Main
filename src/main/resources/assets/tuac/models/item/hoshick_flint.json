@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "tuac:items/pickaxe_flint"
+        "layer0": "tuac:items/hoshick_flint"
     }
 }
