@@ -30,7 +30,6 @@ public class WorldGenTreeCherry extends WorldGenAbstractTree {
 
 	@Override
 	public boolean generate(World worldIn, Random rand, BlockPos position) {
-		System.out.println("WorldGenTreeCherry.generate()");
 		int height = this.minHeight + rand.nextInt(this.heightVariation);
 		boolean flag = true;
 		

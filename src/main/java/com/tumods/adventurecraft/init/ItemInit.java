@@ -23,16 +23,24 @@ public class ItemInit {
 	
 	// INGOTS
 	public static final Item INGOT_COPPER = new ItemBase("ingot_copper");
+	public static final Item INGOT_NEODYMIUM = new ItemBase("ingot_neodymium");
+	public static final Item INGOT_SILVER = new ItemBase("ingot_silver");
+	public static final Item INGOT_TIN = new ItemBase("ingot_tin");
 	
 	
-	// TOOL MATERIALS
-	public static final ToolMaterial TOOL_FLINT = EnumHelper.addToolMaterial("tool_flint", 1, 20, 1.5F, 1.0F, 5);
+	// ORESHARDS
+	public static final Item ORESHARD_END_NEODYMIUM = new ItemBase("oreshard_end_neodymium");
+	public static final Item ORESHARD_NETHER_MANGANESE = new ItemBase("oreshard_nether_manganese");
+	public static final Item ORESHARD_OVERWORLD_COPPER = new ItemBase("oreshard_overworld_copper");
+	public static final Item ORESHARD_OVERWORLD_MANGANESE = new ItemBase("oreshard_overworld_manganese");
+	public static final Item ORESHARD_OVERWORLD_SILVER = new ItemBase("oreshard_overworld_silver");
+	public static final Item ORESHARD_OVERWORLD_TIN = new ItemBase("oreshard_overworld_tin");
 	
 	
 	// TOOLS
-	public static final Item HATCHET_FLINT = new ToolAxe("hatchet_flint", TOOL_FLINT);
-	public static final Item PICKAXE_FLINT = new ToolHoshick("hoshick_flint", TOOL_FLINT);
-	public static final Item KNIFE_FLINT = new ToolKnife("knife_flint", TOOL_FLINT);
+	public static final Item HATCHET_FLINT = new ToolAxe("hatchet_flint", MaterialsInit.TOOL_FLINT);
+	public static final Item PICKAXE_FLINT = new ToolHoshick("hoshick_flint", MaterialsInit.TOOL_FLINT);
+	public static final Item KNIFE_FLINT = new ToolKnife("knife_flint", MaterialsInit.TOOL_FLINT);
 	
 	
 	// FOOD

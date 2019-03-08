@@ -13,6 +13,7 @@ import com.tumods.adventurecraft.util.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -44,6 +45,16 @@ public class ToolHoshick extends ItemTool implements IHasModel {
 		setCreativeTab(Main.itemTab);
 		
 		ItemInit.ITEMS.add(this);
+	}
+	
+	@Override
+	public boolean canHarvestBlock(IBlockState blockIn) {
+		Material material = blockIn.getMaterial();
+		Block block = blockIn.getBlock();
+		if (material == Material.ROCK || material == Material.SNOW || block == Blocks.SNOW_LAYER)
+			return true;
+		
+		return false;
 	}
 	
 	@Override
@@ -126,6 +137,11 @@ public class ToolHoshick extends ItemTool implements IHasModel {
             worldIn.setBlockState(pos, state, 11);
             stack.damageItem(1, player);
         }
+    }
+    
+    @Override
+    public float getDestroySpeed(ItemStack stack, IBlockState state) {
+    	return super.getDestroySpeed(stack, state);
     }
 
 	@Override

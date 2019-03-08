@@ -1,0 +1,6 @@
+{
+    "variants":
+    {
+        "normal": { "model": "tuac:ore_overworld_copper" }
+    }
+}

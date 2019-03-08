@@ -1,5 +1,6 @@
 package com.tumods.adventurecraft.objects.items.food;
 
+import com.tumods.adventurecraft.init.BlockInit;
 import com.tumods.adventurecraft.objects.items.FoodBase;
 
 import net.minecraft.block.state.IBlockState;
@@ -17,7 +18,6 @@ public class ItemRye extends FoodBase implements IPlantable {
 
 	public ItemRye(String name, int amount, float saturation, boolean isWolfFood) {
 		super(name, amount, saturation, isWolfFood);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
@@ -27,14 +27,12 @@ public class ItemRye extends FoodBase implements IPlantable {
 
 	@Override
 	public EnumPlantType getPlantType(IBlockAccess world, BlockPos pos) {
-		// TODO Auto-generated method stub
-		return null;
+		return EnumPlantType.Crop;
 	}
 
 	@Override
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
-		// TODO Auto-generated method stub
-		return null;
+		return BlockInit.CROP_RYE.getDefaultState();
 	}
 
 }
