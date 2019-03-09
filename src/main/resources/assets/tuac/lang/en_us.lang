@@ -44,10 +44,16 @@ tile.crop_raspberry.name=Raspberry Bush
 tile.crop_rye.name=Rye Stalks
 tile.crop_sapling_cherry.name=Cherry Tree Sapling
 tile.sapling_cherry.name=Cherry Tree Sapling
+tile.crop_sapling_chestnut.name=Chestnut Tree Sapling
+tile.sapling_chestnut.name=Chestnut Tree Sapling
 
 
 tile.block_copper.name=Copper Block
 
 
 tile.log_cherry.name=Cherry Wood
+tile.planks_cherry.name=Cherry Planks
 tile.leaves_cherry.name=Cherry Leaves
+tile.log_chestnut.name=Chestnut Wood
+tile.planks_chestnut.name=Chestnut Planks
+tile.leaves_chestnut.name=Chestnut Leaves

@@ -25,7 +25,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockCropRye extends BlockCrops implements IGrowable {
-	public static final PropertyInteger RYE_AGE = PropertyInteger.create("age", 0, 5);
+	public static final PropertyInteger RYE_AGE = PropertyInteger.create("age", 0, 7);
 	
 	private static final AxisAlignedBB[] RYE_AABB = new AxisAlignedBB[] {
 			new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.125D, 1.0D), // STAGE 0
@@ -77,7 +77,7 @@ public class BlockCropRye extends BlockCrops implements IGrowable {
 	
 	@Override
 	public int getMaxAge() {
-		return 5;
+		return 7;
 	}
 	
 	@Override

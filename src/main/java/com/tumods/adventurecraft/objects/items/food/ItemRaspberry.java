@@ -44,7 +44,7 @@ public class ItemRaspberry extends FoodBase implements IHasModel, IPlantable {
 		IBlockState state = worldIn.getBlockState(pos);
 		if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) 
 				&& state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up())) {
-			worldIn.setBlockState(pos.up(), BlockInit.CROP_RYE.getDefaultState());
+			worldIn.setBlockState(pos.up(), BlockInit.CROP_RASPBERRY.getDefaultState());
 			stack.shrink(1);
 			return EnumActionResult.SUCCESS;
 		}

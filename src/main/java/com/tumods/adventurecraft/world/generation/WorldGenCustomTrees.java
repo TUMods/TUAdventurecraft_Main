@@ -5,9 +5,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeCherry;
+import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeChestnut;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeBeach;
 import net.minecraft.world.biome.BiomeForest;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
@@ -17,6 +19,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class WorldGenCustomTrees implements IWorldGenerator {
 	
 	private final WorldGenerator TREE_CHERRY = new WorldGenTreeCherry();
+	private final WorldGenerator TREE_CHESTNUT = new WorldGenTreeChestnut();
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
@@ -25,7 +28,8 @@ public class WorldGenCustomTrees implements IWorldGenerator {
 		case 1: // END
 			break;
 		case 0: // OVERWORLD
-			runGenerator(TREE_CHERRY, world, random, chunkX, chunkZ, 3, -1, 0, BiomeForest.class);
+			runGenerator(TREE_CHERRY, world, random, chunkX, chunkZ, 3, -1, 0);
+			runGenerator(TREE_CHESTNUT, world, random, chunkX, chunkZ, 1, -1, 0);
 			
 			break;
 		case -1: // NETHER
