@@ -1,4 +1,4 @@
-package com.tumods.adventurecraft.world.generation.generators;
+package com.tumods.adventurecraft.world.generation.generators.trees;
 
 import java.util.Random;
 
@@ -107,7 +107,8 @@ public class WorldGenTreeCherry extends WorldGenAbstractTree {
 		Material material = blockType.getDefaultState().getMaterial();
 		return material == Material.AIR || material == Material.LEAVES || material == Material.GROUND 
 				|| blockType == Blocks.GRASS || blockType == Blocks.DIRT || blockType == Blocks.LOG || blockType == Blocks.LOG2
-				|| blockType == Blocks.SAPLING || blockType == Blocks.VINE || blockType == Blocks.FARMLAND;
+				|| blockType == Blocks.SAPLING || blockType == Blocks.VINE || blockType == Blocks.FARMLAND
+				|| blockType == Blocks.SNOW_LAYER || blockType == Blocks.TALLGRASS;
 	}
 
 }

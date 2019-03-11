@@ -7,7 +7,7 @@ item.ingot_neodymium.name=Neodymium Ingot
 item.ingot_silver.name=Silver Ingot
 item.ingot_tin.name=Tin Ingot
 
-item.oreshard_end_neodymium=Neodymium Ore
+item.oreshard_end_neodymium.name=Neodymium Ore
 item.oreshard_nether_manganese.name=Nether Manganese Ore
 item.oreshard_overworld_copper.name=Copper Ore
 item.oreshard_overworld_manganese.name=Manganese Ore

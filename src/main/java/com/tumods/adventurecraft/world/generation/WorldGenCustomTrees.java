@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeCherry;
-import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeChestnut;
+import com.tumods.adventurecraft.world.generation.generators.trees.WorldGenTreeCherry;
+import com.tumods.adventurecraft.world.generation.generators.trees.WorldGenTreeChestnut;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
