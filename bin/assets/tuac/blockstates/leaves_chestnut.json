@@ -1,0 +1,30 @@
+{
+    "variants": {
+        "age=0,can_fruit=true,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=true,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=true,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=true,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=false,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=false,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=false,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_0" },
+        "age=0,can_fruit=false,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_0" },
+        
+        "age=1,can_fruit=true,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=true,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=true,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=true,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=false,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=false,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=false,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_1" },
+        "age=1,can_fruit=false,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_1" },
+        
+        "age=2,can_fruit=true,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=true,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=true,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=true,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=false,check_decay=true,decayable=true": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=false,check_decay=false,decayable=true": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=false,check_decay=true,decayable=false": { "model": "tuac:leaves_chestnut_stage_2" },
+        "age=2,can_fruit=false,check_decay=false,decayable=false": { "model": "tuac:leaves_chestnut_stage_2" }
+    }
+}

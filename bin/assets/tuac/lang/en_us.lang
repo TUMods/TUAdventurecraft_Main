@@ -3,6 +3,24 @@ itemGroup.blocktab=Adventurecraft Blocks
 
 
 item.ingot_copper.name=Copper Ingot
+item.ingot_neodymium.name=Neodymium Ingot
+item.ingot_silver.name=Silver Ingot
+item.ingot_tin.name=Tin Ingot
+
+item.oreshard_end_neodymium=Neodymium Ore
+item.oreshard_nether_manganese.name=Nether Manganese Ore
+item.oreshard_overworld_copper.name=Copper Ore
+item.oreshard_overworld_manganese.name=Manganese Ore
+item.oreshard_overworld_silver.name=Silver Ore
+item.oreshard_overworld_tin.name=Tin Ore
+
+
+tile.ore_end_neodymium.name=Neodymium Ore
+tile.ore_nether_manganese.name=Manganese Ore
+tile.ore_overworld_copper.name=Copper Ore
+tile.ore_overworld_manganese.name=Manganese Ore
+tile.ore_overworld_silver.name=Silver Ore
+tile.ore_overworld_tin.name=Tin Ore
 
 
 item.hatchet_flint.name=Flint Hatchet
@@ -18,17 +36,24 @@ item.produce_lemon.name=Lemon
 item.produce_lime.name=Lime
 item.produce_rye.name=Rye
 
-
-tile.crop_blueberry.name=Blueberry Bush
-tile.crop_sapling_cherry.name=Cherry Tree Sapling
-
-
-tile.sapling_cherry.name=Cherry Tree Sapling
-
-
 item.seed_cherry.name=Cherry Pit
 
 
+tile.crop_blueberry.name=Blueberry Bush
+tile.crop_raspberry.name=Raspberry Bush
+tile.crop_rye.name=Rye Stalks
+tile.crop_sapling_cherry.name=Cherry Tree Sapling
+tile.sapling_cherry.name=Cherry Tree Sapling
+tile.crop_sapling_chestnut.name=Chestnut Tree Sapling
+tile.sapling_chestnut.name=Chestnut Tree Sapling
+
+
 tile.block_copper.name=Copper Block
+
+
 tile.log_cherry.name=Cherry Wood
+tile.planks_cherry.name=Cherry Planks
 tile.leaves_cherry.name=Cherry Leaves
+tile.log_chestnut.name=Chestnut Wood
+tile.planks_chestnut.name=Chestnut Planks
+tile.leaves_chestnut.name=Chestnut Leaves

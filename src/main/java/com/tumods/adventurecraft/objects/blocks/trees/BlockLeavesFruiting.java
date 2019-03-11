@@ -17,7 +17,6 @@ public class BlockLeavesFruiting extends BlockLeavesBase {
 	
 	public void setFruitByChance(World world, BlockPos pos, boolean condition) {
 		world.setBlockState(pos, this.getDefaultState().withProperty(CAN_FRUIT, condition));
-		System.out.println("Set canFruit: " + condition);
 	}
 	
 	public boolean canFruit(World world, BlockPos pos) {

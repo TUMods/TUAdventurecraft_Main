@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "tuac:blocks/crop_sapling_chestnut_stage_0"
+    }
+}

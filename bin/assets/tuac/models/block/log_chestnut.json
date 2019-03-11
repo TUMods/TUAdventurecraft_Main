@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "tuac:blocks/log_chestnut_top",
+        "side": "tuac:blocks/log_chestnut_side"
+    }
+}

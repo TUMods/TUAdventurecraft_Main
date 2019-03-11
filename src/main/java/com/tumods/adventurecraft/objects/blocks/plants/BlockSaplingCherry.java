@@ -73,7 +73,6 @@ public class BlockSaplingCherry extends BlockBush implements IGrowable, IHasMode
 	
 	public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand) {
 		if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
-		System.out.println("SaplingCherry generate Tree saplingGrowTree");
 		WorldGenerator gen = new WorldGenTrees(false);//(rand.nextInt(10) == 0 ? new WorldGenBigTree(false) : new WorldGenTrees(false));
 		int i = 0, j = 0; // used for big trees
 		boolean flag = false; // used for big trees

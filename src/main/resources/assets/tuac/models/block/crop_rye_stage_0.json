@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "tuac:blocks/crop_rye_stage_0"
+    }
+}
