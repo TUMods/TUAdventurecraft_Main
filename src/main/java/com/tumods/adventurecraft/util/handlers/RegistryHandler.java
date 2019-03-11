@@ -4,7 +4,7 @@ import com.tumods.adventurecraft.init.BlockInit;
 import com.tumods.adventurecraft.init.ItemInit;
 import com.tumods.adventurecraft.util.IHasModel;
 import com.tumods.adventurecraft.world.generation.WorldGenCustomOres;
-import com.tumods.adventurecraft.world.generation.WorldGenCustomTrees;
+import com.tumods.adventurecraft.world.generation.WorldGenCustomStructures;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -43,6 +43,7 @@ public class RegistryHandler {
 	
 	public static void otherRegistries() {
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
-		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
+//		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 	}
 }

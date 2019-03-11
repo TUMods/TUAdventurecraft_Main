@@ -6,7 +6,7 @@ import com.tumods.adventurecraft.Main;
 import com.tumods.adventurecraft.init.BlockInit;
 import com.tumods.adventurecraft.init.ItemInit;
 import com.tumods.adventurecraft.util.IHasModel;
-import com.tumods.adventurecraft.world.generation.generators.WorldGenTreeChestnut;
+import com.tumods.adventurecraft.world.generation.generators.trees.WorldGenTreeChestnut;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
