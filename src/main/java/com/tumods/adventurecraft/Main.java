@@ -29,17 +29,16 @@ public class Main {
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
-		RegistryHandler.otherRegistries();
+		RegistryHandler.preInitRegistries();
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
-
+		RegistryHandler.initRegistries();
 	}
 	
 	@EventHandler
 	public static void postInit(FMLPostInitializationEvent event) {
-		System.out.println("\n\n#########################\n\n\t\tPOST INIT\n\n#########################\n\n");
-		RecipeInit.unregisterRecipes();
+		RegistryHandler.postInitRegistries();
 	}
 }

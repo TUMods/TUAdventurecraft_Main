@@ -7,6 +7,9 @@ public class Reference {
 	public static final String CLIENT = "com.tumods.adventurecraft.proxy.ClientProxy";
 	public static final String COMMON = "com.tumods.adventurecraft.proxy.CommonProxy";
 	
+	// CUSTOM GUI IDs
+	public static final int GUI_BLOOMERY = 0;
+	
 	// COLOUR CODES
 	public static final String DARK_RED = "\u00A74";
 	public static final String RED = "\u00A7c";

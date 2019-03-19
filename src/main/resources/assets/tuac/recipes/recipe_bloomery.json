@@ -6,10 +6,14 @@
         "SsS"
     ],
     "key": {
-        "#": { "item": "minecraft:terracotta" },
+        "#": { "item": "minecraft:hardened_clay" },
         "c": { "item": "minecraft:clay_ball" },
         "S": { "item": "minecraft:cobblestone" },
-        "s": { "item": "minecraft:cobblestone_slab" }
+        "s": { "item": "minecraft:stone_slab", "data": 3 }
     },
-    "result": {}
+    "result": 
+    { 
+        "item": "tuac:bloomery",
+        "count": 1
+    }
 }

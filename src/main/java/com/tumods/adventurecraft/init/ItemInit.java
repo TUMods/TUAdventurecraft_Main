@@ -28,6 +28,11 @@ public class ItemInit {
 	public static final Item INGOT_TIN = new ItemBase("ingot_tin");
 	
 	
+	// BLOOMERY
+	public static final Item BLOOM_COPPER = new ItemBase("bloom_copper");
+	public static final Item BLOOM_TIN = new ItemBase("bloom_tin");
+	
+	
 	// ORESHARDS
 	public static final Item ORESHARD_END_NEODYMIUM = new ItemBase("oreshard_end_neodymium");
 	public static final Item ORESHARD_NETHER_MANGANESE = new ItemBase("oreshard_nether_manganese");

@@ -1,0 +1,14 @@
+{
+    "variants":
+    {
+        "burning=false,facing=north": { "model": "tuac:bloomery" },
+        "burning=false,facing=east": { "model": "tuac:bloomery", "y": 90 },
+        "burning=false,facing=south": { "model": "tuac:bloomery", "y": 180 },
+        "burning=false,facing=west": { "model": "tuac:bloomery", "y": 270 },
+        
+        "burning=true,facing=north": { "model": "tuac:bloomery_lit" },
+        "burning=true,facing=east": { "model": "tuac:bloomery_lit", "y": 90 },
+        "burning=true,facing=south": { "model": "tuac:bloomery_lit", "y": 180 },
+        "burning=true,facing=west": { "model": "tuac:bloomery_lit", "y": 270 }
+    }
+}
