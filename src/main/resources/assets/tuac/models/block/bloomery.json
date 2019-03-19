@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures":
+    {
+        "particle": "tuac:blocks/bloomery_front_off",
+        "up": "tuac:blocks/bloomery_top_off",
+        "down": "tuac:blocks/bloomery_side",
+        "north": "tuac:blocks/bloomery_front_off",
+        "east": "tuac:blocks/bloomery_side",
+        "south": "tuac:blocks/bloomery_side",
+        "west": "tuac:blocks/bloomery_side"
+    }
+}

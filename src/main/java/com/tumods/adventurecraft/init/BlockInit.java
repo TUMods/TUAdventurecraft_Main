@@ -8,6 +8,7 @@ import com.tumods.adventurecraft.objects.blocks.BlockOreBase;
 import com.tumods.adventurecraft.objects.blocks.food.BlockCropBlueberry;
 import com.tumods.adventurecraft.objects.blocks.food.BlockCropRaspberry;
 import com.tumods.adventurecraft.objects.blocks.food.BlockCropRye;
+import com.tumods.adventurecraft.objects.blocks.machines.bloomery.BlockBloomery;
 import com.tumods.adventurecraft.objects.blocks.plants.BlockCropSaplingCherry;
 import com.tumods.adventurecraft.objects.blocks.plants.BlockCropSaplingChestnut;
 import com.tumods.adventurecraft.objects.blocks.plants.BlockSaplingCherry;
@@ -63,5 +64,9 @@ public class BlockInit {
 	public static final Block LOG_CHESTNUT = new BlockLogBase("log_chestnut");
 	public static final Block PLANKS_CHESTNUT = new BlockBase("planks_chestnut", Material.WOOD);
 	public static final Block LEAVES_CHESTNUT = new BlockLeavesChestnut("leaves_chestnut");
+	
+	
+	// MACHINES
+	public static final Block BLOOMERY = new BlockBloomery("bloomery");
 	
 }
